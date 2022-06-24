@@ -1,1 +1,9 @@
 # Blockchain-Solidity
+# PROJET SPA
+Le dossier projetSPA est une tentative d'application qui servirait au vétérinaire et au association d'adoption d'animaux de compagnie. C'est application Node-Express-MongoDB qui interroge des smart contract déployé sur la blockchain de test RopstenETH. Le principe est que chaque propriétaire et chaque animaux soit représenté par un contrat. Grâce à l'application on pourrait lier un ou plusieurs animaux à un propriétaire, déclarer si un animal est perdu ou déclarer si un animal à été abandonné et dans ce cas on pourrait "strike" son propriétaire afin qu'il ne puisse plus adopter d'animaux.
+Malheuresement j'ai essayé de plusieurs manières (avec les librairies web3 et ethers) mais je n'arrive pas à utiliser les fonctions du smart contract. 
+# TEST NODE PROJECT KITTIES
+Ce dossier contient 2 fichiers : le premier permet de logger si un crypto-kitties est né dans le dernier bloc miné. Si on observe une naissance on log certaines informations : le numéro du bloc , le propriétaire du du crypto-kyttie, et l'Id du crypto-kyttie.
+Le deuxième est sensiblement identique il permet de logger les transactions des Token BAT dans le dernier bloc miné. Si on observe un transaction on log : l'expéditeur, le destinataire, et la valeur du Token. 
+# Différence entre le standard ERC-20 et ERC-721
+Les standards ERC-20 et ERC-721 permettent de créer des jetons que l'on peut acheter, vendre ou même échanger. la différence est que les Token qui suivent le standard ERC-721 (les NFT) sont des Token dit "non-fongibles", ils sont uniques et possèdent un propriétaire. Pour déployer un smart contract dans le standard ERC-20 ou ERC-721 il suffit d'implementer l'interface correspondante. la différence est que pour l'ERC-721 on doit implementer en plus la notion de propriétaire. 
